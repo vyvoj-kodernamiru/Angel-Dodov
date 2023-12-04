@@ -1,4 +1,8 @@
-<div class="navbar bg-base-100">
+<script lang="ts">
+
+</script>
+
+<div class="navbar bg-base-100 sticky-nav">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -49,6 +53,15 @@
   </div>
   <div class="navbar-end">
     <!-- svelte-ignore a11y-missing-attribute -->
-    <a class="btn">Napsat nám email</a>
+    
   </div>
 </div>
+
+<style>
+  .sticky-nav {
+    position: -webkit-sticky; /* Pro WebKit prohlížeče */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Uprav podle potřeby */
+  }
+</style>
