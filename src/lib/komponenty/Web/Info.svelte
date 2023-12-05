@@ -2,7 +2,7 @@
     <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div class="md:5/12 lg:w-5/12 md:justify-end md:text-center">
-                <img src="https://firebasestorage.googleapis.com/v0/b/angel-dodov.appspot.com/o/58409940_2197848446969472_8377760544697876480_n%20(1).jpg?alt=media&token=cc3f30a9-44c0-4314-9d09-d1a76bcb8ac6" alt="image" loading="lazy" width="" height="">
+                <img src="https://firebasestorage.googleapis.com/v0/b/angel-dodov.appspot.com/o/58409940_2197848446969472_8377760544697876480_n%20(1).jpg?alt=media&token=cc3f30a9-44c0-4314-9d09-d1a76bcb8ac6" alt="image" loading="lazy" width="" height="" class="md:mx-auto md:mr-0">
             </div>
             <div class="md:7/12 lg:w-6/12">
                 <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">O našem Truhlářství DODO</h2>

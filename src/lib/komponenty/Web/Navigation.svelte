@@ -16,15 +16,15 @@
           
           <ul class="p-2">
              <!-- svelte-ignore a11y-missing-attribute -->
-             <li><a>Interiér</a></li>
+             <li><a href="/interier">Interiér</a></li>
              <!-- svelte-ignore a11y-missing-attribute -->
-             <li><a>Exteriér</a></li>
+             <li><a href="/exterier">Exteriér</a></li>
               <!-- svelte-ignore a11y-missing-attribute -->
-             <li><a>Doplňky</a></li>
+             <li><a href="/doplnky">Doplňky</a></li>
           </ul>
         </li>
         <!-- svelte-ignore a11y-missing-attribute -->
-        <li><a>Poptávka</a></li>
+        <li><a href="/poptavka">Poptávka</a></li>
       </ul>
     </div>
     <!-- svelte-ignore a11y-missing-attribute -->
@@ -39,16 +39,16 @@
           <summary>Co děláme?</summary>
           <ul class="p-2">
             <!-- svelte-ignore a11y-missing-attribute -->
-            <li><a>Interiér</a></li>
+            <li><a href="/interier">Interiér</a></li>
             <!-- svelte-ignore a11y-missing-attribute -->
-            <li><a>Exteriér</a></li>
+            <li><a href="/exterier">Exteriér</a></li>
              <!-- svelte-ignore a11y-missing-attribute -->
-            <li><a>Doplňky</a></li>
+            <li><a href="/doplnky">Doplňky</a></li>
           </ul>
         </details>
       </li>
       <!-- svelte-ignore a11y-missing-attribute -->
-      <li><a>Poptávka</a></li>
+      <li><a href="/poptavka">Poptávka</a></li>
     </ul>
   </div>
   <div class="navbar-end">
