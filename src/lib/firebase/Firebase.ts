@@ -1,6 +1,8 @@
-import { initializeApp } from 'firebase/app';
-import { getStorage } from 'firebase/storage';
+import { initializeApp } from 'firebase/app';  // Přidání funkce pro Inicializaci Firebase
+import { getStorage } from 'firebase/storage';  // Přidání funkce pro práci s Daty, Foto, Soubory atp
 import { getDatabase } from 'firebase/database'; // Přidání funkce pro práci s Realtime databází
+import { getAuth } from 'firebase/auth';         // Přidání funkce pro práci s Přihlášením
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyCmiRbSSFJym58537j4MDfOOUH2Ay67INg",
@@ -13,6 +15,7 @@ const firebaseConfig = {
 
 // Inicializace Firebase aplikace
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
 // Vytvoření instance úložiště
 const storage = getStorage(app);
@@ -20,5 +23,5 @@ const storage = getStorage(app);
 // Vytvoření instance Realtime databáze
 const db = getDatabase(app);
 
-	export { storage, db, app }; // Export instance úložiště a databáze pro použití v komponentách
- // Export instance úložiště a databáze pro použití v komponentách
+	export { storage, db, app, auth }; // Export instance úložiště a databáze pro použití v komponentách
+ // Export instance úložiště a databáze pro použití v komponentách + přihlášení.
