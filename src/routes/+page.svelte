@@ -6,6 +6,5 @@
 
 </script>
 
-<Hero/>
 <Info/>
 <ONas/>
