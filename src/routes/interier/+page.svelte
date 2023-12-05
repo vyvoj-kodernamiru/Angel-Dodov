@@ -47,8 +47,8 @@
                 <img src="https://firebasestorage.googleapis.com/v0/b/angel-dodov.appspot.com/o/58409940_2197848446969472_8377760544697876480_n%20(1).jpg?alt=media&token=cc3f30a9-44c0-4314-9d09-d1a76bcb8ac6" alt="image" loading="lazy" width="" height="" class="md:mx-auto md:mr-0">
             </div>
             <div class="md:7/12 lg:w-6/12">
-                <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">Truhlářství DODO - Interiér</h2>
-                <p class="mt-6 text- text-gray-600">
+                <h2 class="text-2xl text-gray-900 font-bold md:text-4xl text-center">Truhlářství DODO - Interiér</h2>
+                <p class="mt-6 text- text-gray-600 text-center">
                    Naše truhlářské umění nejen dodává do vašeho domova kvalitní nábytek, ale tvoříme jedinečné prostředí s osobitým příběhem. Každý kus, každá textura a linie dřeva je pečlivě vybrána a zpracována, aby nejen esteticky ladila s vaším vkusem, ale také poskytovala praktické využití. Vaše interiéry nejsou pouze prostory, ale místa, kde naše práce vypráví příběh o vašem životě a vkusu, přidává osobnost a podtrhuje vaši jedinečnost.</p>
             </div>
         </div>

@@ -45,8 +45,8 @@
                  <img src="https://firebasestorage.googleapis.com/v0/b/angel-dodov.appspot.com/o/58409940_2197848446969472_8377760544697876480_n%20(1).jpg?alt=media&token=cc3f30a9-44c0-4314-9d09-d1a76bcb8ac6" alt="image" loading="lazy" width="" height="" class="md:mx-auto md:mr-0">
              </div>
              <div class="md:7/12 lg:w-6/12">
-                 <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">Truhlářství DODO - Doplňky</h2>
-                 <p class="mt-6 text- text-gray-600">
+                 <h2 class="text-2xl text-gray-900 font-bold md:text-4xl text">Truhlářství DODO - Doplňky</h2>
+                 <p class="mt-6 text-center text-gray-600">
                     Naše nabídka doplňků není jen o estetice. Jsou to malé, ale významné prvky, které transformují vaše prostory. Od vkusných detailů po praktické předměty, každý doplněk je pečlivě navržen tak, aby dokreslil atmosféru vašeho domova. Jsme tady, abychom vám nabídli nejen výrobky, ale také příběh a výraz vaší osobnosti skrze každý detail.
                     
                     Těchto pár vět může pomoci zdůraznit vaše služby a přístup k práci s interiéry, exteriéry a doplňky.</p>

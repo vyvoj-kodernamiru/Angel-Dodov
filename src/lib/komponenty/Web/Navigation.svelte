@@ -11,7 +11,7 @@
       <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         <!-- svelte-ignore a11y-missing-attribute -->
-        <li><a>O nás</a></li>
+        <li><a href="/">Domů</a></li>
         <li>
           
           <ul class="p-2">
@@ -28,12 +28,12 @@
       </ul>
     </div>
     <!-- svelte-ignore a11y-missing-attribute -->
-    <a class="btn btn-ghost text-xl">Truhlářství DODO</a>
+    <a href="/" class="btn btn-ghost text-xl">Truhlářství DODO</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
       <!-- svelte-ignore a11y-missing-attribute -->
-      <li><a>O nás</a></li>
+      <li><a href="/">Domů</a></li>
       <li>
         <details>
           <summary>Co děláme?</summary>
