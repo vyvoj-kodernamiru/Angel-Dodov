@@ -1,28 +1,40 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
 
-  const images = [
-    'url(https://firebasestorage.googleapis.com/v0/b/angel-dodov.appspot.com/o/IMG_7369-min.jpeg?alt=media&token=7104a94f-b360-4999-b9b5-49e290a84fa0)',
-    'url(https://firebasestorage.googleapis.com/v0/b/angel-dodov.appspot.com/o/IMG_4181-min.jpeg?alt=media&token=1dd89652-db3f-4ed8-87f8-42ea8506a75e)',
-    'url(https://firebasestorage.googleapis.com/v0/b/angel-dodov.appspot.com/o/IMG_7376-min.jpeg?alt=media&token=6989d448-8c48-4804-b8af-9fa5b2c57241)',
+  const imageUrls: string[] = [
+    'https://firebasestorage.googleapis.com/v0/b/angel-dodov.appspot.com/o/IMG_7369-min.jpeg?alt=media&token=7104a94f-b360-4999-b9b5-49e290a84fa0',
+    'https://firebasestorage.googleapis.com/v0/b/angel-dodov.appspot.com/o/IMG_4181-min.jpeg?alt=media&token=1dd89652-db3f-4ed8-87f8-42ea8506a75e',
+    'https://firebasestorage.googleapis.com/v0/b/angel-dodov.appspot.com/o/IMG_7376-min.jpeg?alt=media&token=6989d448-8c48-4804-b8af-9fa5b2c57241',
     // Další URL obrázků...
   ];
 
-  let currentImageIndex = 0;
+  let currentImageIndex: number = 0;
+  const imageObjects: HTMLImageElement[] = [];
+
+  // Funkce pro přednačtení obrázků
+  const preloadImages = (): void => {
+    imageUrls.forEach(url => {
+      const img = new Image();
+      img.src = url;
+      imageObjects.push(img);
+    });
+  };
 
   onMount(() => {
-    const bgImageElement = document.getElementById('bgImage');
+    preloadImages();
+
+    const bgImageElement: HTMLElement | null = document.getElementById('bgImage');
     if (bgImageElement) {
-      bgImageElement.style.backgroundImage = images[currentImageIndex];
+      bgImageElement.style.backgroundImage = `url(${imageUrls[currentImageIndex]})`;
     }
     
     const interval = setInterval(() => {
       if (bgImageElement) {
         bgImageElement.classList.add('bg-image-hidden');
         setTimeout(() => {
-          currentImageIndex = (currentImageIndex + 1) % images.length;
+          currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
           if (bgImageElement) {
-            bgImageElement.style.backgroundImage = images[currentImageIndex];
+            bgImageElement.style.backgroundImage = `url(${imageUrls[currentImageIndex]})`;
             bgImageElement.classList.remove('bg-image-hidden');
           }
         }, 500);
@@ -32,6 +44,7 @@
     return () => clearInterval(interval);
   });
 </script>
+
   
 <style>
   /* Základní styly pro obrázek */

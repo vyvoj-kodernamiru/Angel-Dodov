@@ -6,7 +6,7 @@
   </script>
   <div class="bg-white">
   <Navigation/>
-
+  <Hero/>
   
   <slot />
 

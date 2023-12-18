@@ -35,7 +35,7 @@
       </ul>
     </nav>
     <button class="border border-white rounded-full font-bold px-8 py-2">
-      <a href="mailto:zadejte@email.com">Napiště nám E-Mail</a>
+      <a href="mailto:zadejte@email.com">Zavolejte nám</a>
     </button>
   </div>
 </header>
