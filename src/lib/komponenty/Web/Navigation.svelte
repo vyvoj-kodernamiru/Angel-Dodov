@@ -1,67 +1,41 @@
 <script lang="ts">
 
+
 </script>
 
-<div class="navbar bg-base-100 sticky-nav">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-      </div>
-      <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <!-- svelte-ignore a11y-missing-attribute -->
-        <li><a href="/">Domů</a></li>
-        <li>
-          
-          <ul class="p-2">
-             <!-- svelte-ignore a11y-missing-attribute -->
-             <li><a href="/interier">Interiér</a></li>
-             <!-- svelte-ignore a11y-missing-attribute -->
-             <li><a href="/exterier">Exteriér</a></li>
-              <!-- svelte-ignore a11y-missing-attribute -->
-             <li><a href="/doplnky">Doplňky</a></li>
-          </ul>
-        </li>
-        <!-- svelte-ignore a11y-missing-attribute -->
-        <li><a href="/poptavka">Poptávka</a></li>
-      </ul>
-    </div>
-    <!-- svelte-ignore a11y-missing-attribute -->
-    <a href="/" class="btn btn-ghost text-xl">Truhlářství DODO</a>
-  </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <!-- svelte-ignore a11y-missing-attribute -->
-      <li><a href="/">Domů</a></li>
-      <li>
-        <details>
-          <summary>Co děláme?</summary>
-          <ul class="p-2">
-            <!-- svelte-ignore a11y-missing-attribute -->
-            <li><a href="/interier">Interiér</a></li>
-            <!-- svelte-ignore a11y-missing-attribute -->
-            <li><a href="/exterier">Exteriér</a></li>
-             <!-- svelte-ignore a11y-missing-attribute -->
-            <li><a href="/doplnky">Doplňky</a></li>
-          </ul>
-        </details>
-      </li>
-      <!-- svelte-ignore a11y-missing-attribute -->
-      <li><a href="/poptavka">Poptávka</a></li>
-    </ul>
-  </div>
-  <div class="navbar-end">
-    <!-- svelte-ignore a11y-missing-attribute -->
-    
-  </div>
-</div>
 
-<style>
-  .sticky-nav {
-    position: -webkit-sticky; /* Pro WebKit prohlížeče */
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Uprav podle potřeby */
-  }
-</style>
+
+<header class="bg-black text-white shadow-lg hidden md:block sticky top-0 z-50">
+  <div class="container mx-auto flex items-center h-32">
+    <a href="/" class="flex items-center justify-center">
+      <img class="h-32" src="https://firebasestorage.googleapis.com/v0/b/angel-dodov.appspot.com/o/58409940_2197848446969472_8377760544697876480_n%20(1).jpg?alt=media&token=cc3f30a9-44c0-4314-9d09-d1a76bcb8ac6" alt="" />
+    </a>
+    <nav class="contents font-semibold text-base lg:text-lg">
+      <ul class="mx-auto flex items-center">
+        <li class="p-5 xl:p-8 active">
+          <a href="/">
+            <span>Domů</span>
+          </a>
+        </li>
+        <li class="p-5 xl:p-8">
+          <a href="/interier">
+            <span>Interiér</span>
+          </a>
+        </li>
+        <li class="p-5 xl:p-8">
+          <a href="/exterier">
+            <span>Exteriér</span>
+          </a>
+        </li>
+        <li class="p-5 xl:p-8">
+          <a href="/doplnky">
+            <span>Doplňky</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="border border-white rounded-full font-bold px-8 py-2">
+      <a href="mailto:zadejte@email.com">Napiště nám E-Mail</a>
+    </button>
+  </div>
+</header>
