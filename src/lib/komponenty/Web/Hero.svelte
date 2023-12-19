@@ -76,7 +76,7 @@
   }
 </style>
 
-<p>Aktuální segment: {$page.params.segment}</p>
+
 <section class="relative">
   <div class="bg-image" id="bgImage">
     <div class="opacity-75 absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
@@ -85,7 +85,7 @@
       <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
         <div class="text-center-desktop">
           <h1 class="text-3xl font-extrabold sm:text-5xl text-center text-white">
-            Truhlářství DODO - 
+            Truhlářství DODO 
             <strong class="block font-extrabold text-center">
               {getTitleFromSegment($page.params.segment)}
             </strong>
