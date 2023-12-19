@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { navigate } from 'svelte-routing';
+
   let isMenuOpen = false;
 
   function toggleMenu() {
@@ -7,6 +9,11 @@
 
   function closeMenu() {
     isMenuOpen = false;
+  }
+
+  function navigateTo(url: string) {
+    navigate(url); // Use navigate from svelte-routing to navigate to the specified URL
+    closeMenu(); // Close the menu after navigating
   }
 </script>
 
@@ -19,23 +26,24 @@
     <!-- Navigace -->
     <nav class="hidden md:flex items-center">
       <ul class="flex items-center space-x-4 font-semibold text-base lg:text-lg">
+        <!-- Interaktivní odkazy na jednotlivé stránky -->
         <li class="p-5 xl:p-8 active">
-          <a href="/">
+          <a href="/" on:click|preventDefault={() => navigateTo('/')}>
             <span>Domů</span>
           </a>
         </li>
         <li class="p-5 xl:p-8">
-          <a href="/interier">
+          <a href="/interier" on:click|preventDefault={() => navigateTo('/interier')}>
             <span>Interiér</span>
           </a>
         </li>
         <li class="p-5 xl:p-8">
-          <a href="/exterier">
+          <a href="/exterier" on:click|preventDefault={() => navigateTo('/exterier')}>
             <span>Exteriér</span>
           </a>
         </li>
         <li class="p-5 xl:p-8">
-          <a href="/doplnky">
+          <a href="/doplnky" on:click|preventDefault={() => navigateTo('/doplnky')}>
             <span>Doplňky</span>
           </a>
         </li>
@@ -52,16 +60,16 @@
     <div class="md:hidden absolute top-0 right-0 m-4">
       <ul class="text-base lg:text-lg bg-black absolute top-16 right-0 w-40 flex flex-col space-y-4 p-4 rounded-lg shadow-lg">
         <li>
-          <a href="/" class="block py-2 text-white hover:bg-gray-800">Domů</a>
+          <a href="/" class="block py-2 text-white hover:bg-gray-800" on:click={closeMenu}>Domů</a>
         </li>
         <li>
-          <a href="/interier" class="block py-2 text-white hover:bg-gray-800">Interiér</a>
+          <a href="/interier" class="block py-2 text-white hover:bg-gray-800" on:click={closeMenu}>Interiér</a>
         </li>
         <li>
-          <a href="/exterier" class="block py-2 text-white hover:bg-gray-800">Exteriér</a>
+          <a href="/exterier" class="block py-2 text-white hover:bg-gray-800" on:click={closeMenu}>Exteriér</a>
         </li>
         <li>
-          <a href="/doplnky" class="block py-2 text-white hover:bg-gray-800">Doplňky</a>
+          <a href="/doplnky" class="block py-2 text-white hover:bg-gray-800" on:click={closeMenu}>Doplňky</a>
         </li>
       </ul>
     </div>
