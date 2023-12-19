@@ -3,6 +3,9 @@
   import { storage } from '../../lib/firebase/Firebase';
   import { getDownloadURL, listAll, ref } from 'firebase/storage';
 	import Poptavka from '$lib/komponenty/Web/Poptavka.svelte';
+	import Navigation from '$lib/komponenty/Web/Navigation.svelte';
+	import HeroExterier from '$lib/komponenty/Web/HeroExterier.svelte';
+
 
   let loadedImages: string[] = [];
   let currentImageIndex = 0;
@@ -42,6 +45,8 @@
     selectedImage = null;
   };
 </script>
+<Navigation/>
+<HeroExterier/>
 
 {#if isLoading}
   <div class="flex justify-center items-center h-screen">

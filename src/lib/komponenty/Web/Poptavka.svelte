@@ -68,8 +68,8 @@
               </div>
               <div class="mb-4">
                 <label for="message" class="block mb-1">Text pro dotaz:</label>
-                <textarea id="message" bind:value={message} class="w-full border-2 border-black focus:outline-none focus:border-blue-500"></textarea>
-              </div>
+                <textarea id="message" bind:value={message} class="w-full border-2 border-black focus:outline-none focus:border-blue-500" rows="6"></textarea>
+            </div>
               <button type="submit" class="block w-full py-2 px-4 bg-black text-white rounded hover:bg-gray-800 focus:outline-none focus:bg-gray-800">Odeslat</button>
             </form>
           </div>

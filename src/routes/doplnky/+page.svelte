@@ -2,6 +2,10 @@
     import { onMount } from 'svelte';
     import { storage } from '../../lib/firebase/Firebase';
     import { getDownloadURL, listAll, ref } from 'firebase/storage';
+	import Navigation from '$lib/komponenty/Web/Navigation.svelte';
+	import HeroDoplnky from '$lib/komponenty/Web/HeroDoplnky.svelte';
+	import Poptavka from '$lib/komponenty/Web/Poptavka.svelte';
+
   
     let loadedImages: HTMLImageElement[] = []; // Pole pro načtené obrázky
     let isLoading = true; // Proměnná pro zobrazení spinneru
@@ -31,6 +35,9 @@
       }
     });
   </script>
+
+<Navigation/>
+<HeroDoplnky/>
 
 {#if isLoading}
 <div class="flex justify-center items-center h-screen">
@@ -66,6 +73,8 @@
   </div>
   
   {/if}
+
+  <Poptavka/>
   <!-- Styly pro galerii -->
   <style>
     .max-w-xs {

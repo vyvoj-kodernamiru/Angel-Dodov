@@ -4,6 +4,7 @@ import { onMount, onDestroy } from 'svelte';
   import { getDownloadURL, listAll, ref } from 'firebase/storage';
 	import Navigation from '$lib/komponenty/Web/Navigation.svelte';
 	import HeroInterier from '$lib/komponenty/Web/HeroInterier.svelte';
+	import Poptavka from '$lib/komponenty/Web/Poptavka.svelte';
 
   let loadedImages: string[] = [];
   let currentImageIndex = 0;
@@ -128,7 +129,7 @@ import { onMount, onDestroy } from 'svelte';
 {/if}
 {/if}
 
-
+<Poptavka/>
 
 <style>
 /* Responzivní rozložení obrázků v galerii */
