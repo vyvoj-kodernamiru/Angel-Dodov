@@ -5,9 +5,7 @@
 	import Hero from "$lib/komponenty/Web/Hero.svelte";
   </script>
   <div class="bg-white">
-  <Navigation/>
-  <Hero/>
-  
+
   <slot />
 
   <footer>

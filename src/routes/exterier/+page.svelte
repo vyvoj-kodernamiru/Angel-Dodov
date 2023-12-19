@@ -2,6 +2,7 @@
   import { onMount, onDestroy } from 'svelte';
   import { storage } from '../../lib/firebase/Firebase';
   import { getDownloadURL, listAll, ref } from 'firebase/storage';
+	import Poptavka from '$lib/komponenty/Web/Poptavka.svelte';
 
   let loadedImages: string[] = [];
   let currentImageIndex = 0;
@@ -83,6 +84,7 @@
 {/if}
 {/if}
 
+<Poptavka/>
 <style>
   /* Responzivní rozložení obrázků v galerii */
   .w-full {

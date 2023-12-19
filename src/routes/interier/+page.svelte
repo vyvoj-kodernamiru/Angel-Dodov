@@ -2,6 +2,8 @@
 import { onMount, onDestroy } from 'svelte';
   import { storage } from '../../lib/firebase/Firebase';
   import { getDownloadURL, listAll, ref } from 'firebase/storage';
+	import Navigation from '$lib/komponenty/Web/Navigation.svelte';
+	import HeroInterier from '$lib/komponenty/Web/HeroInterier.svelte';
 
   let loadedImages: string[] = [];
   let currentImageIndex = 0;
@@ -41,6 +43,9 @@ import { onMount, onDestroy } from 'svelte';
     selectedImage = null;
   };
 </script>
+
+<Navigation/>
+<HeroInterier/>
 
 <!-- Spinner pro zobrazení během načítání -->
 {#if isLoading}
@@ -122,6 +127,8 @@ import { onMount, onDestroy } from 'svelte';
 </div>
 {/if}
 {/if}
+
+
 
 <style>
 /* Responzivní rozložení obrázků v galerii */
