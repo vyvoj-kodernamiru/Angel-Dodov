@@ -53,7 +53,45 @@
             </div>
         </div>
     </div>
+
+    <div class="px-4 py-20 mx-auto max-w-7xl">
+      <div class="max-w-xl mx-auto">
+          <h1 class="mb-4 text-4xl font-bold text-center text-black">Interiérní služby</h1>
+          <p class="mb-16 text-base text-center text-black">
+          </p>
+      </div>
+      <div class="grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-x-8 lg:gap-y-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="w-full p-8 mb-5 text-center transition-all bg-white rounded shadow  hover:shadow-lg">
+              
+                  <!-- Interiér -->
+                 
+             <a href="/interier/kuchynske-linky"> <h3 class="mb-4 text-2xl font-semibold text-black">Kuchyňské linky</h3></a>
+              <p class="text-base text-black ">
+                
+              </p>
+          </div>
+          
+          
+          <div class="w-full p-8 mb-5 text-center transition-all bg-white rounded shadow hover:shadow-lg">
+                  <!-- Exteriér -->
+                 
+              
+              <a href="/interier/vestavene-skrine"><h3 class="mb-4 text-2xl font-semibold text-black ">Věstavěné skříně</h3></a>
+              <p class="text-base text-black">
+              
+              </p>
+          </div>
+          <div class="w-full p-8 mb-5 text-center transition-all bg-white rounded shadow  hover:shadow-lg">                  <!-- Doplňky -->                 
+             <a href="/interier/soliter"> <h3 class="mb-4 text-2xl font-semibold text-black ">Solitér</h3></a>
+              <p class="text-base text-black ">
+               
+              </p>
+          </div>
+      </div>
+  </div>
 </div>
+
+
   
   <!-- Zobrazení načtených obrázků v galerii -->
   <div class="flex flex-wrap justify-center">
