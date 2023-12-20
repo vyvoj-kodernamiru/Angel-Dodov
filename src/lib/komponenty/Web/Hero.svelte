@@ -79,7 +79,7 @@
 
 <section class="relative">
   <div class="bg-image" id="bgImage">
-    <div class="opacity-75 absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+    <div class=" absolute inset-0"></div>
 
     <div class="relative mx-auto max-w-screen-xl px-4 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
       <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
@@ -96,7 +96,7 @@
           </h1>
 
           <div class="mt-8 flex flex-wrap gap-4 justify-center"> <!-- Upraveno zarovnání odkazů na střed -->
-            <a href="/" class="block rounded bg-black px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring">
+            <a href="/" class="block rounded hneda px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring">
               Zavolat 
             </a>
 

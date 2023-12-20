@@ -15,7 +15,7 @@ function navigateTo(url: string) {
 }
 </script>
 
-<header class="bg-black text-white shadow-lg sticky top-0 z-50">
+<header class="bg-hneda text-white shadow-lg sticky top-0 z-50">
   <div class="container mx-auto flex items-center justify-between h-32">
     <!-- Logo -->
     <a href="/" class="flex items-center">
@@ -55,7 +55,7 @@ function navigateTo(url: string) {
   {#if isMenuOpen}
     <div class="md:hidden fixed inset-0 bg-black bg-opacity-50" on:click={closeMenu}></div>
     <div class="md:hidden absolute top-0 right-0 m-4">
-      <ul class="text-base lg:text-lg bg-black absolute top-16 right-0 w-40 flex flex-col space-y-4 p-4 rounded-lg shadow-lg">
+      <ul class="text-base lg:text-lg bg-hneda absolute top-16 right-0 w-40 flex flex-col space-y-4 p-4 rounded-lg shadow-lg">
         <li>
           <a href="/" class="block py-2 text-white hover:bg-gray-800">Domů</a>
         </li>
