@@ -134,6 +134,9 @@ function changePage(pageNumber: number) {
 {/if}
 
   <Poptavka/>
+  <footer>
+    <Footer/>
+  </footer>
   <!-- Styly pro galerii -->
   <style>
     .max-w-xs {
