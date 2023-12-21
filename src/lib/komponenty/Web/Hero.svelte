@@ -96,7 +96,7 @@
           </h1>
 
           <div class="mt-8 flex flex-wrap gap-4 justify-center"> <!-- Upraveno zarovnání odkazů na střed -->
-            <a href="/" class="block rounded hneda px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring">
+            <a href="/" class="block rounded bg-hneda px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring">
               Zavolat 
             </a>
 
