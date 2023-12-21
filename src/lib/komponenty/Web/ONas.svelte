@@ -6,7 +6,7 @@
           </p>
       </div>
       <div class="grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-x-8 lg:gap-y-8 md:grid-cols-2 lg:grid-cols-3">
-          <div class="w-full p-8 mb-5 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg">
+         <a href="/interier"> <div class="w-full p-8 mb-5 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg">
               
                   <!-- Interiér -->
                  
@@ -14,8 +14,8 @@
               <p class="text-base text-gray-500 dark:text-gray-400">
                 Začněte proměnu vašeho interiéru s našimi jedinečnými návrhy a řemeslným mistrovstvím. Každý kousek je pečlivě vytvořen, aby váš domov zářil elegancí a originalitou.
               </p>
-          </div>
-          <div class="w-full p-8 mb-5 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg">
+          </div></a>
+        <a href="/exterier">  <div class="w-full p-8 mb-5 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg">
                   <!-- Exteriér -->
                  
               
@@ -23,13 +23,13 @@
               <p class="text-base text-gray-500 dark:text-gray-400">
                 Navrhněte svůj zahradní ráj s našimi exkluzivními venkovními prvky. Každý detail je vyroben s precizností, aby vaše venkovní prostory odrážely váš osobní styl a zároveň odolávaly všem povětrnostním podmínkám.
               </p>
-          </div>
-          <div class="w-full p-8 mb-5 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg">                  <!-- Doplňky -->                 
+          </div></a>
+          <a href="/doplnky"><div class="w-full p-8 mb-5 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg">                  <!-- Doplňky -->                 
               <h3 class="mb-4 text-2xl font-semibold dark:text-white">Doplňky</h3>
               <p class="text-base text-gray-500 dark:text-gray-400">
                 Pro dokonalý finiš vámi zvoleného designu nezapomeňte na naše doplňky. Naše ručně vyrobené kousky dodají vašemu prostoru ten správný nádech individuality a elegance, který ho dokonale doplní.
               </p>
-          </div>
+          </div></a>
       </div>
   </div>
 </section>
